@@ -2,11 +2,9 @@ package com.FortTown.Fuji;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Typeface;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
-import android.widget.EditText;
 
 public class MyActivity extends Activity {
     public final static String EXTRA_MESSAGE = "GameType";
@@ -17,10 +15,10 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
     public void clickPlay(View view) {
-        /*
         Intent intent = new Intent(this, Gameplay.class);
         //get ID of button that sent us here
         switch(view.getId()) {
@@ -35,7 +33,7 @@ public class MyActivity extends Activity {
                 intent.putExtra(EXTRA_MESSAGE, "Movies");
                 break;
         }
-        startActivity(intent)
-        */
+        startActivity(intent);
+
     }
 }
