@@ -20,9 +20,11 @@ public class MyActivity extends Activity {
     }
 
     public void clickPlay(View view) {
+        /*
         Intent intent = new Intent(this, Gameplay.class);
         //get ID of button that sent us here
         switch(view.getId()) {
+
             case R.id.button:
                 intent.putExtra(EXTRA_MESSAGE, "Movies");
                 break;
@@ -33,6 +35,7 @@ public class MyActivity extends Activity {
                 intent.putExtra(EXTRA_MESSAGE, "Movies");
                 break;
         }
-        startActivity(intent);
+        startActivity(intent)
+        */
     }
 }
