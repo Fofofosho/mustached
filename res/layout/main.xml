@@ -3,12 +3,17 @@
 <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
-        android:background="@drawable/colors/MIDNIGHT-BLUE" android:clickable="false">
+        android:background="@color/MIDNIGHTBLUE" android:clickable="false">
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New Button"
             android:id="@+id/button"
-            android:layout_marginTop="152dp" android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" android:background="#3498db"/>
+            android:layout_marginTop="157dp"
+            android:background="@drawable/button"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" android:layout_alignParentEnd="false" android:clickable="true"
+            android:enabled="true" android:focusable="true" android:height="50dp" android:minHeight="50dp"
+            android:minWidth="50dp" android:width="200dp"
+            />
 </RelativeLayout>
