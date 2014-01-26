@@ -16,4 +16,13 @@
             android:enabled="true" android:focusable="true" android:height="50dp" android:minHeight="50dp"
             android:minWidth="50dp" android:width="200dp"
             />
+
+    <TextView
+            android:layout_width="418dp"
+            android:layout_height="96dp"
+            android:text="@string/app_name"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true" android:layout_alignTop="@+id/gridView" android:typeface="sans"
+            android:textSize="36dp" android:textColor="@color/CLOUDS"/>
+
 </RelativeLayout>
