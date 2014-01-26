@@ -3,11 +3,11 @@
 <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
-        android:background="@color/MIDNIGHTBLUE" android:clickable="false">
+        android:background="@color/MIDNIGHTBLUE" android:clickable="false" android:hapticFeedbackEnabled="true">
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="Movies"
             android:id="@+id/button"
             android:layout_marginTop="157dp"
             android:background="@drawable/button"
@@ -15,6 +15,7 @@
             android:layout_centerHorizontal="true" android:layout_alignParentEnd="false" android:clickable="true"
             android:enabled="true" android:focusable="true" android:height="50dp" android:minHeight="50dp"
             android:minWidth="50dp" android:width="200dp"
+            android:onClick="clickPlay"
             />
 
     <TextView
@@ -24,5 +25,12 @@
             android:id="@+id/textView"
             android:layout_centerHorizontal="true" android:layout_alignTop="@+id/gridView" android:typeface="sans"
             android:textSize="36dp" android:textColor="@color/CLOUDS"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Games"
+            android:id="@+id/button2" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+            android:onClick="clickPlay"
+            />
 
 </RelativeLayout>

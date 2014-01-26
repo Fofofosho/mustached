@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@color/MIDNIGHTBLUE">
+
+    <TextView
+            android:layout_width="137dp"
+            android:layout_height="115dp"
+            android:text="POOP"
+            android:id="@+id/textView" android:layout_x="134dp" android:layout_y="55dp" android:autoText="true"
+            android:textColor="@color/CLOUDS"/>
+</AbsoluteLayout>
