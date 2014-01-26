@@ -2,11 +2,8 @@ package com.FortTown.Fuji;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
-import android.widget.EditText;
 
 public class MyActivity extends Activity {
     public final static String EXTRA_MESSAGE = "GameType";
