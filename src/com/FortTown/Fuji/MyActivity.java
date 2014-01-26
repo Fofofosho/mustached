@@ -1,6 +1,7 @@
 package com.FortTown.Fuji;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 public class MyActivity extends Activity {
