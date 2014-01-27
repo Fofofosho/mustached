@@ -5,7 +5,9 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -41,23 +43,21 @@ public class MyActivity extends Activity {
     }
 
     public void clickDialog(View view) {
-        final Dialog dialog = new Dialog(MyActivity.this);
+        final Dialog dialog = new Dialog(MyActivity.this) {
+
+            //close dialog by touching anywhere
+            public boolean onTouchEvent(MotionEvent event) {
+            this.dismiss();
+            return true;
+            }
+        };
+
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog);
-        //dialog.setTitle("Category");
 
         TextView text = (TextView) dialog.findViewById(R.id.textView);
         text.setText("Custom text example AKA poop on my butt");
 
         dialog.show();
-
-        Button exitButton = (Button) dialog.findViewById(R.id.button);
-
-        exitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-
     }
 }
