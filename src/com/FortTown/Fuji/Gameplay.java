@@ -28,7 +28,6 @@ public class Gameplay extends Activity {
         Intent intent = getIntent();
 
         //get message from intent
-
         String gameMode = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
 
         //change text to whatever was passed in

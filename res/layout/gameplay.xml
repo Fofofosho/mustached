@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res/com.FortTown.Fuji"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:background="@color/MIDNIGHTBLUE">
+
+    <com.FortTown.Fuji.Countdown_View
+        android:id="@+id/countdownView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        custom:circleColor="@color/ALIZARIN"
+        custom:circleLabel="Timer"
+        custom:labelColor="@color/CLOUDS"/>
 
     <TextView
             android:layout_width="137dp"
