@@ -1,10 +1,13 @@
 package com.FortTown.Fuji;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MyActivity extends Activity {
     public final static String EXTRA_MESSAGE = "GameType";
@@ -34,6 +37,27 @@ public class MyActivity extends Activity {
                 break;
         }
         startActivity(intent);
+
+    }
+
+    public void clickDialog(View view) {
+        final Dialog dialog = new Dialog(MyActivity.this);
+        dialog.setContentView(R.layout.dialog);
+        //dialog.setTitle("Category");
+
+        TextView text = (TextView) dialog.findViewById(R.id.textView);
+        text.setText("Custom text example AKA poop on my butt");
+
+        dialog.show();
+
+        Button exitButton = (Button) dialog.findViewById(R.id.button);
+
+        exitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
 
     }
 }
